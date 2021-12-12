@@ -1,0 +1,56 @@
+Data = {
+  "Raphael": 80
+}
+def tambah():
+  Name = input("Masukkan Nama anda : ")
+  Value = input("Masukkan Nilai anda : ")
+  for x in range(len(Data)):
+    if Name == list(Data.keys())[x] :
+      print("Nama sudah terdaftar")
+    else:
+      Data[Name] = int(Value)
+
+def tampilkan():
+  print("============ Data Universal ============")
+  for i in range(len(Data)):
+    print(f"Nama : {list(Data.keys())[i]} | Nilai : {Data[list(Data.keys())[i]]}")
+  print("========================================")
+
+def hapus(nama):
+  if nama in list(Data):
+    del Data[nama]
+  else:
+    print("Nama tidak ditemukan")
+
+def ubah(nama):
+  while True:
+    try:
+      Data[nama] = int(input(f"Nilai {nama} = "))
+      break
+    except:
+      print("Pengisian harus dalam bentuk angka!")
+
+while True:
+  Pilih = input("T(tambah) | P(Tampil) | (H)Hapus | U(ubah) | K(Keluar) : ")
+  if Pilih == "T" or Pilih == "t":
+    tambah()
+
+  elif Pilih == "P" or Pilih == "p":
+    tampilkan()
+
+  elif Pilih == "H" or Pilih == "h":
+    for m in range(len(Data)):
+      print(f'{m + 1}. {list(Data.keys())[m]}')
+    hapus(input("Pilih dan Ketik Nama ingin dihapus : "))
+
+  elif Pilih == "U" or Pilih == "u":
+    for m in range(len(Data)):
+      print(f'{m + 1}. {list(Data.keys())[m]}')
+    change = input("Pilih dan Ketik Nama ingin diubah : ")
+    if change in list(Data.keys()):
+      ubah(change)
+    else:
+      print("Nama tidak terdaftar")
+
+  elif Pilih == "K" or Pilih == "k":
+    break
