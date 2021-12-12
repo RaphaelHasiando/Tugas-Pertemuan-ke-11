@@ -86,3 +86,4 @@ Fungsi input itu dikategorikan sebagai argumen untuk fungsi hapus()
 ###
       elif Pilih == "K" or Pilih == "k":
         break
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/61907877/145726384-caa8060e-5dd4-491b-9411-63dadf1e12ea.png)
