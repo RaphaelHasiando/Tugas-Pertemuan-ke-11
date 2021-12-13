@@ -3,13 +3,13 @@
 ## ==========================================================
 ###
     function (parameter/)
-1 - Buatlah variable
+1 - Buatlah variable dictionary untuk menyimpan nilai data (dalam pasangan kunci:nilai)
 ###
     Data = {
       "Rahmat": 80
     }
-2 - Buatlah 
-## def Tambah()
+2 - 4 function untuk menambahkan, menampilkan, menghapus, dan mengubah
+## def tambah()
 3 - Buatlah variable untuk meng-input Nama dan Nilai baru
 ###
     def tambah():
