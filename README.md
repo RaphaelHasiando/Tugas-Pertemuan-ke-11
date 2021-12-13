@@ -20,7 +20,7 @@
     def tambah():
       Name = input("Masukkan Nama anda : ")
       if Name in list(Data):
-        print("Nama telah terdaftar")
+        print("Nama yang anda masukkan sudah terdaftar")
       else:
         Value = input("Masukkan Nilai anda : ")
         Data[Name] = int(Value)
@@ -39,7 +39,7 @@
       if nama in list(Data):
         del Data[nama]
       else:
-        print("Nama tidak ditemukan")
+        print("Nama yang Anda masukkan tidak ditemukan")
 Saat function dipanggil, akan mejalankan 'del Data [nama]', yang digunakan di dalam fungsi untuk menghapus Nama dan nilai
 ## def ubah(nama)
 7 - Gunakan perulangan (while loop) dan 'try,except' untuk mengulang jika data yang diisi mendapatkan nilai yang error.
@@ -52,6 +52,7 @@ Saat function dipanggil, akan mejalankan 'del Data [nama]', yang digunakan di da
         except:
           print("Pengisian harus dalam bentuk angka!")
 Ketika terjadi kesalahan, atau pengecualian, function tersebut akan berhenti dan menghasilkan pesan kesalahan.
+###
 8 - Buatlah perulangan (while loop) dan variable input() untuk menampilkan menu pilihan
 ###
     while True:
@@ -81,9 +82,12 @@ Fungsi input itu dikategorikan sebagai argumen untuk fungsi hapus()
       if change in list(Data.keys()):
         ubah(change)
       else:
-        print("Nama tidak terdaftar")
+        print("Nama yang Anda masukkan tidak ditemukan")
 12- Terakhir, Gunakan fungsi 'break' untuk mengakhiri program / perulangan (while loop)
 ###
       elif Pilih == "K" or Pilih == "k":
         break
 ![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/61907877/145726384-caa8060e-5dd4-491b-9411-63dadf1e12ea.png)
+![image](https://user-images.githubusercontent.com/61907877/145756262-bfaed51b-3052-4a70-9bb2-376c14a55d9c.png)
+![image](https://user-images.githubusercontent.com/61907877/145756594-5088c071-ac4c-4dab-a573-d5a4bb55aafb.png)
+![image](https://user-images.githubusercontent.com/61907877/145756764-e186fad8-c3e7-410f-b611-06d08287d685.png)
